@@ -1,138 +1,107 @@
-*, ::before,::after 
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+*,
+::before,
+::after 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header
+header 
 {
-    height: 10.5vh;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
 }
-h2
+header h2 
 {
     display: flex;
-font-size: 40px;
-color: #ffffff;
-justify-content: left;
+    font-size: 40px;
+    color: #ffffff;
+    justify-content: left;
 }
-.nav1
+.nav1 
 {
     height: 100%;
     width: 100%;
-    background-color:rgb(116, 110, 110);
-    font-family: 'Segoe UI';
+    background-color: rgb(116, 110, 110);
+    font-family: "Segoe UI";
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
 }
-li
+header li
 {
     list-style: none;
     display: inline-block;
     color: white;
     padding: 22px;
     font-size: 23px;
-    font-family: 'inter';
+    font-family: "Inter";
 }
 main
 {
-    background-color: rgb(255, 255, 255);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: rgb(116, 110, 110);
 }
-.copy
+.para 
+{
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 
+{
+    color:white;
+    font-size: 4.5rem;
+}
+h2 
+{
+    color: rgb(67, 61, 61);
+    font-size: 1.5rem;
+}
+
+h3 
+{
+    color: rgb(67, 61, 61);
+    font-size: 1rem;
+}
+i 
 {
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+    color: red;
+    font-size: 60px;
 }
-
-
-/* .wrapper 
+.competence
 {
-display:flex;
-justify-content: center;
-position: relative;
-margin-top: 17px;
+background-color: white;
 }
-.wrapper .icon 
+.container2
 {
-position: relative;
-background: #ffffff;
-border-radius: 50%;
-padding: 15px;
-margin: 10px;
-width: 50px;
-height: 50px;
-font-size: 18px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-cursor: pointer;
-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: black;
+    border-radius: 25px;
+    width: 70vw;
+    height: 50vh;
+    margin: 3rem 9rem;
+    display: flex;
 }
-
-.wrapper .tooltip
+.container2 ul
 {
-position: absolute;
-top: 0;
-font-size: 14px;
-background: #ffffff;
-color: #ffffff;
-padding: 5px 8px;
-border-radius: 5px;
-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-opacity: 0;
-pointer-events: none;
-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    list-style: none;
+    flex-direction: row;
 }
-
-.wrapper .tooltip::before
+.container2 li
 {
-position: absolute;
-content: "";
-height: 8px;
-width: 8px;
-background: #ffffff;
-bottom: -3px;
-left: 50%;
-transform: translate(-50%) rotate(45deg);
-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: white;
 }
-
-.wrapper .icon:hover .tooltip
+/* .copy
 {
-top: -45px;
-opacity: 1;
-visibility:visible;
-pointer-events:auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip 
-{
-text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before 
-{
-background: #1da0f2;
-color: #ffffff;
-}
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before
-{
-background: #464945;
-color: #ffffff;
-}
-.wrapper .Linkedin:hover,
-.wrapper .Linkedin:hover .tooltip,
-.wrapper .Linkedin:hover .tooltip::before 
-{
-background: #ff0000;
-color: #ffffff;
+    color: black;
+    text-align: center;
 } */
