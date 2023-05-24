@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 header 
 {
@@ -69,37 +70,56 @@ h3
     color: rgb(67, 61, 61);
     font-size: 1rem;
 }
-i 
+.para i 
 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 5%;
+    bottom: 10%;
     color: red;
     font-size: 60px;
 }
-.competence
+#competence
 {
 background-color: white;
 }
-.container2
+#competence h2
+{
+    color: red;
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.5rem;
+}
+.competences
 {
     background-color: black;
-    border-radius: 25px;
+    margin:0 auto;
+    height: 60vh;
     width: 70vw;
-    height: 50vh;
-    margin: 3rem 9rem;
-    display: flex;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
 }
-.container2 ul
+.competences img
 {
-    list-style: none;
-    flex-direction: row;
+    width: 100px;
+    margin: 20px;
+    border:2px solid white;
+    padding: 15px;
+    border-radius: 10px;
 }
-.container2 li
+/*
+.container2 :nth-child(1)
 {
-    color: white;
+    margin-top: 1rem;
+    grid-area: 1/2;
 }
+.container2 :nth-child(2)
+{
+    margin-top: 1rem;
+    grid-area: 2/3;
+} */
 /* .copy
 {
     color: black;
