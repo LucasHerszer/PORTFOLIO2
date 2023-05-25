@@ -41,12 +41,23 @@ header li
     font-size: 23px;
     font-family: "Inter";
 }
+header li a
+{
+    text-decoration: none;
+    color: white;
+}
+header li a:hover
+{
+    text-decoration: none;
+    color: black;
+
+}
 main
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: rgb(116, 110, 110);
 }
 .para 
@@ -81,18 +92,29 @@ h3
 }
 #competence
 {
-background-color: white;
+background-color: rgb(255, 255, 255);
+height: 100vh;
+padding-top: 100px;
 }
 #competence h2
 {
-    color: red;
+    color: black;
     text-align: center;
-    margin: 3rem;
+    margin-top: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     font-size: 2.5rem;
 }
-.competences
+#competence h3
 {
-    background-color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(95, 91, 91);
+    margin-bottom: 1rem;
+}
+.container-competences
+{
+    background-color: rgb(0, 0, 0);
     margin:0 auto;
     height: 60vh;
     width: 70vw;
@@ -101,25 +123,19 @@ background-color: white;
     grid-template-columns: repeat(3,1fr);
     place-items: center;
 }
-.competences img
+.container-competences img
 {
     width: 100px;
     margin: 20px;
-    border:2px solid white;
+    border:2px solid rgba(0, 0, 0, 0.479);
     padding: 15px;
     border-radius: 10px;
+    background: rgb(255, 255, 255);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.9px);
+-webkit-backdrop-filter: blur(1.9px);
 }
-/*
-.container2 :nth-child(1)
-{
-    margin-top: 1rem;
-    grid-area: 1/2;
-}
-.container2 :nth-child(2)
-{
-    margin-top: 1rem;
-    grid-area: 2/3;
-} */
 /* .copy
 {
     color: black;
