@@ -41,6 +41,7 @@ header li
     padding: 22px;
     font-size: 23px;
     font-family: "Inter";
+    text-transform: uppercase;
 }
 header li a
 {
@@ -91,6 +92,52 @@ main
     color: red;
     font-size: 60px;
 }
+
+span{
+    padding-top: 20px;
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+span a{
+    font-size: 14px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+span a:before,
+span a:after{
+    position: absolute;
+    content: "téléchargé CV";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+span a:before{
+    color: #fff;
+    background-color: rgb(116, 110, 110);
+    transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+    color: rgb(255, 254, 254);
+    transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
 #competence
 {
 background-color: rgb(255, 255, 255);
@@ -145,7 +192,7 @@ backdrop-filter: blur(1.9px);
 }
 #projets h2
     {
-    margin-top:3rem;
+    margin-top:1rem;
     color: black;
     text-align: center;
     margin-left: 3rem;
@@ -172,8 +219,8 @@ backdrop-filter: blur(1.9px);
     .card 
     {
         display: flex;
-        height: 280px;
-        width: 200px;
+        height: 50vh;
+        width: 50vw;
         background-color: #17141d;
         border-radius: 10px;
         box-shadow: -1rem 0 1rem #000;
@@ -217,21 +264,21 @@ backdrop-filter: blur(1.9px);
         background-color: #2e3033;
         width: 100%;
         height: 100%;
-    }
-    
-    .filledbar {
+    } 
+    .filledbar
+    {
         position: absolute;
         top: 0px;
         z-index: 3;
         width: 0px;
         height: 100%;
-        background: rgb(0,154,217);
+        background: rgb(2, 167, 233);
         background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
-        transition: 0.6s ease-out;
+        transition: 0.9s ease-out;
     }
     
     .card:hover .filledbar {
-        width: 120px;
+        width: 150px;
         transition: 0.4s ease-out;
     }
     .stroke {
@@ -240,18 +287,35 @@ backdrop-filter: blur(1.9px);
         stroke-dashoffset: 360;
         transition: 0.6s ease-out;
     }
-    
-    svg {
-        fill: #17141d;
-        stroke-width: 2px;
-    }
-    
     .card:hover .stroke {
         stroke-dashoffset: 100;
         transition: 0.6s ease-out;
     }
+    .title
+    {
+        font-size: 25px;
+    }
+footer .footer
+{
+    background-color: #2e3033;
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer li
+{
+    list-style: none;
+    font-size: 35px;
+    margin: 0px 8px;
+    color: white;
+}
 .copy
 {
-    color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e3033;
     text-align: center;
 }
